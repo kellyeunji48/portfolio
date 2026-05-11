@@ -1,290 +1,96 @@
-# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
-
-title: Eunji Shin # Website title
-first_name: Eunji
-last_name: Shin
-contact_note: >
-  Feel free to reach out! Best reached via email (kelly-eunji@naver.com) or Instagram (@eu_njjii). 
-  Check out my detailed portfolio on Notion: https://www.notion.so/Hello-I-m-Eunji-Shin-0278203c41158395b1748146b72525f8
-description: >
-  Junior in Management Information Systems at Dong-A University (GPA 4.0/4.5). 
-  Undergraduate Researcher focused on Agentic LLM & RAG. 
-  Dedicated to solving social issues like elderly isolation through technology. 
-  Developer of 'K-SoR' and award winner at Do-Dream & Boost-Up Startup Camps.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Eunji Shin, MIS, AI Researcher, Agentic LLM, RAG, K-SoR, Edutech, Portfolio
-lang: en # Site language set to English
-icon: ⚛️ 
-
-url: https://kellyeunji48.github.io # Updated with your GitHub ID
-baseurl: "" # Leave blank for root deployment
-last_updated: true 
-impressum_path: 
-back_to_top: true 
-
-# -----------------------------------------------------------------------------
-# Theme
-# -----------------------------------------------------------------------------
-
-repo_theme_light: default 
-repo_theme_dark: dark 
-repo_trophies:
-  enabled: true
-  theme_light: flat 
-  theme_dark: gitdimmed 
-
-external_services:
-  github_readme_stats_url: https://github-readme-stats.vercel.app
-  github_profile_trophy_url: https://github-profile-trophy.vercel.app
-
-# -----------------------------------------------------------------------------
-# Layout
-# -----------------------------------------------------------------------------
-
-navbar_fixed: true
-footer_fixed: true
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
-bib_search: true
-
-max_width: 930px
-
-# -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-
-blog_name: Eunji's Tech Blog 
-blog_description: Exploring AI, MIS, and Social Innovation.
-permalink: /blog/:year/:title/
-lsi: false 
-
-pagination:
-  enabled: true
-
-related_blog_posts:
-  enabled: true
-  max_related: 5
-
-giscus:
-  repo: kellyeunji48/kellyeunji48.github.io # Updated with your repo path
-  repo_id: 
-  category: Comments 
-  category_id: 
-  mapping: title 
-  strict: 1 
-  reactions_enabled: 1 
-  input_position: bottom 
-  dark_theme: dark 
-  light_theme: light 
-  emit_metadata: 0
-  lang: en
-
-disqus_shortname: al-folio 
-
-external_sources:
-  - name: Naver Blog
-    rss_url: https://blog.naver.com/imyourtulip # Your personal blog link
-
-# -----------------------------------------------------------------------------
-# Collections
-# -----------------------------------------------------------------------------
-
-collections:
-  books:
-    output: true
-  news:
-    defaults:
-      layout: post
-    output: true
-  projects:
-    output: true
-  teachings:
-    output: true
-
-# -----------------------------------------------------------------------------
-# Jekyll settings
-# -----------------------------------------------------------------------------
-
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    css_class: "highlight"
-    span:
-      line_numbers: false
-    block:
-      line_numbers: false
-      start_line: 1
-
-include: ["_pages", "_scripts"]
-exclude:
-  - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
-  - Dockerfile
-  - docker-compose.yml
-  - docker-compose-slim.yml
-  - FAQ.md
-  - Gemfile
-  - Gemfile.lock
-  - INSTALL.md
-  - LICENSE
-  - lighthouse_results/
-  - package.json
-  - package-lock.json
-  - _pages/about_einstein.md
-  - purgecss.config.js
-  - README.md
-  - readme_preview/
-  - vendor
-keep_files:
-  - CNAME
-  - .nojekyll
-
-plugins:
-  - jekyll-3rd-party-libraries
-  - jekyll-archives-v2
-  - jekyll-cache-bust
-  - jekyll-email-protect
-  - jekyll-feed
-  - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
-  - jekyll-link-attributes
-  - jekyll-minifier
-  - jekyll-paginate-v2
-  - jekyll-regex-replace
-  - jekyll/scholar
-  - jekyll-sitemap
-  - jekyll-socials
-  - jekyll-tabs
-  - jekyll-terser
-  - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
-
-defaults:
-  - scope:
-      path: "assets"
-    values:
-      sitemap: false
-
-sass:
-  style: compressed
-
-# -----------------------------------------------------------------------------
-# Jekyll Scholar
-# -----------------------------------------------------------------------------
-
-scholar:
-  last_name: [Shin] # Updated to your name
-  first_name: [Eunji, E.]
-
-  style: apa
-  locale: en
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  bibtex_filters: [latex, smallcaps, superscript]
-
-  replace_strings: true
-  join_strings: true
-
-  details_dir: bibliography
-  details_link: Details
-
-  query: "@*"
-  group_by: year
-  group_order: descending
-
-enable_publication_badges:
-  altmetric: true 
-  dimensions: true 
-  google_scholar: true 
-  inspirehep: true 
-
-filtered_bibtex_keywords:
-  [
-    abbr, abstract, additional_info, altmetric, annotation, arxiv, award, award_name, 
-    bibtex_show, blog, code, dimensions, eprint, google_scholar_id, hal, html, 
-    inspirehep_id, pdf, pmid, poster, preview, selected, slides, supp, video, website,
+{
+  "basics": {
+    "name": "Eunji Shin",
+    "label": "Undergraduate Researcher & MIS Student",
+    "email": "kelly-eunji@naver.com",
+    "phone": "",
+    "url": "https://kellyeunji48.github.io",
+    "summary": "Junior in Management Information Systems at Dong-A University with a GPA of 4.0/4.5. Passionate about solving social issues through technology, specifically focusing on elderly isolation and AI literacy. Experienced in data analysis (Python, R) and UI/UX design.",
+    "location": {
+      "city": "Busan",
+      "countryCode": "KR"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "kellyeunji48",
+        "url": "https://github.com/kellyeunji48"
+      },
+      {
+        "network": "Instagram",
+        "username": "eu_njjii",
+        "url": "https://instagram.com/eu_njjii"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Dong-A University",
+      "area": "Management Information Systems (MIS)",
+      "studyType": "Bachelor",
+      "startDate": "2024-03-01",
+      "score": "4.0 / 4.5",
+      "courses": [
+        "Data Science Programming",
+        "Management Information Systems Research Credit"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Hyundai Marine & Fire Insurance X Comento",
+      "position": "Project Intern (Local AI Makers Lab)",
+      "startDate": "2024",
+      "summary": "Selected for a project-based internship to develop AI solutions for local issues."
+    },
+    {
+      "name": "Dong-A University",
+      "position": "Student Tutor (Data Science Programming)",
+      "startDate": "2024",
+      "summary": "Assisted students in learning Python and data analysis techniques."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Excellence Award - 3rd Do-Dream Startup Camp",
+      "date": "2024",
+      "awarder": "Pusan National University"
+    },
+    {
+      "title": "Excellence Award - Boost-Up Startup Camp",
+      "date": "2024",
+      "awarder": "Pusan National University"
+    },
+    {
+      "title": "Excellence Award - International Youth Online Exchange",
+      "date": "2024",
+      "awarder": "Korea-Brunei Representative"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming & Data",
+      "keywords": ["Python (Advanced)", "R (Intermediate)", "SQLD", "ADsP", "Tableau"]
+    },
+    {
+      "name": "Design & Web",
+      "keywords": ["Figma (Advanced)", "HTML/CSS", "UX/UI Design"]
+    },
+    {
+      "name": "Languages",
+      "keywords": ["English (Advanced - IELTS)", "Japanese (Basic)"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "K-SoR (Korea Science of Reading)",
+      "description": "AI-based literacy solution for elementary students.",
+      "url": "https://kellyeunji48.github.io"
+    },
+    {
+      "name": "LifeArchive",
+      "description": "Psychological care & autobiography service for the elderly.",
+      "url": "https://lifearchive.vercel.app/"
+    }
   ]
-
-max_author_limit: 3 
-more_authors_animation_delay: 10 
-enable_publication_thumbnails: true
-
-# -----------------------------------------------------------------------------
-# Responsive WebP Images
-# -----------------------------------------------------------------------------
-
-imagemagick:
-  enabled: true 
-  widths:
-    - 480
-    - 800
-    - 1400
-  input_directories:
-    - assets/img/
-  input_formats:
-    - ".jpg"
-    - ".jpeg"
-    - ".png"
-    - ".tiff"
-    - ".gif"
-  output_formats:
-    webp: "-auto-orient -quality 85"
-
-lazy_loading_images: true 
-
-# -----------------------------------------------------------------------------
-# Optional Features
-# -----------------------------------------------------------------------------
-
-enable_google_analytics: false 
-enable_cronitor_analytics: false 
-enable_pirsch_analytics: false 
-enable_openpanel_analytics: false 
-enable_google_verification: false 
-enable_bing_verification: false 
-enable_cookie_consent: false 
-enable_masonry: true 
-enable_math: true 
-enable_tooltips: false 
-enable_darkmode: true 
-enable_navbar_social: false 
-enable_project_categories: true 
-enable_medium_zoom: true 
-enable_progressbar: true 
-enable_video_embedding: false 
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json 
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
-  - interests
-  - references
+}
